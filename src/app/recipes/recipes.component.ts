@@ -9,13 +9,11 @@ import { Recipe } from './recipe.model';
 export class RecipesComponent implements OnInit {
   recipe: Recipe;
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
-  public onNotifyClicked(recipe: Recipe): void {
-    debugger;
+  public displayRecipe(recipe: Recipe): void {
     this.recipe = recipe;
   }
 }
